@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    tools:context=".fragment.seller.SellerProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            style="@style/lbl.black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/seller_setting_title" />
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="48dp"
+                android:layout_marginStart="@dimen/padding"
+                android:layout_marginEnd="@dimen/padding"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_white_24"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_marginTop="23dp"
+                    style="@style/lbl.black"
+                    android:textStyle="bold"
+                    android:text="@string/normal_profile" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_avatar"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:src="@drawable/ic_account_circle"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/lbl_name"
+                    style="@style/lbl.black"
+                    android:layout_marginTop="24dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Dr. Gabriel Arita" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:text="No. Licencia: "
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/lbl_license"
+                        style="@style/lbl.black"
+                        android:layout_marginStart="12dp"
+                        android:text="0123456789"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:text="Mail: "
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/lbl_email"
+                        style="@style/lbl.black"
+                        android:layout_marginStart="12dp"
+                        android:text="admin@admin.com"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:text="@string/reg_gender"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/lbl_gender"
+                        style="@style/lbl.black"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/normal_male"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/lbl_rate"
+                        style="@style/lbl.black"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:text="5.0"
+                        android:textColor="@color/colorYellow"/>
+
+                    <ImageView
+                        android:id="@+id/img_star_01"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="16sp"
+                        android:layout_height="16sp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:id="@+id/img_star_02"
+                        android:layout_marginStart="-2dp"
+                        android:layout_width="16sp"
+                        android:layout_height="16sp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:id="@+id/img_star_03"
+                        android:layout_marginStart="-2dp"
+                        android:layout_width="16sp"
+                        android:layout_height="16sp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:id="@+id/img_star_04"
+                        android:layout_marginStart="-2dp"
+                        android:layout_width="16sp"
+                        android:layout_height="16sp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:id="@+id/img_star_05"
+                        android:layout_marginStart="-2dp"
+                        android:layout_width="16sp"
+                        android:layout_height="16sp"
+                        android:src="@drawable/ic_star" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:text="@string/birth_title"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/lbl_birth"
+                        style="@style/lbl.black"
+                        android:layout_marginStart="12dp"
+                        android:text="03-08-1989"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:text="@string/normal_location"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/lbl_address"
+                        style="@style/lbl.black"
+                        android:layout_marginStart="12dp"
+                        android:text="City, Departamento"
+                        android:textSize="13sp"/>
+
+                    <ImageView
+                        android:layout_marginStart="4dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/colorBlue" />
+                </LinearLayout>
+
+                <com.liangfeizc.flowlayout.FlowLayout
+                    android:id="@+id/flw_tag_kind"
+                    style="@style/flw_tag"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"/>
+                
+                <LinearLayout
+                    android:id="@+id/llt_profile"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_attach"
+                        app:tint="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/lbl_pick_iamge"
+                        style="@style/lbl.black"
+                        android:layout_marginStart="8dp"
+                        android:text="Adjuntar imágenes +\n(opcional Max 9)"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="28dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_marginStart="13.5dp"
+                        android:layout_marginEnd="13.5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#99707070"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            style="@style/lbl.black"
+                            android:textStyle="bold"
+                            android:text="Especialidad" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/imb_spec_add"
+                            android:layout_margin="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_add"
+                            android:tint="@color/colorBlue"
+                            android:elevation="2dp"
+                            android:background="@drawable/back_white_corner_circle"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llt_spec"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_license"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_medical"
+                        app:hint="Agregar No. de licencia"
+                        app:inputType="Number"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="28dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_marginStart="13.5dp"
+                        android:layout_marginEnd="13.5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#99707070"/>
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textStyle="bold"
+                        android:text="Datos Generales" />
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_birth"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_calendar"
+                        app:hint="09-09-1987"/>
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_city"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_location"
+                        app:hint="@string/normal_city"/>
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_province"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_location"
+                        app:hint="@string/normal_province"/>
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_location"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_location"
+                        app:hint="@string/normal_latlng"/>
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_phone"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_phone"
+                        app:hint="@string/normal_phone"/>
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_credit"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_credit_card"
+                        app:hint="@string/normal_phone"/>
+
+                    <TextView
+                        android:id="@+id/lbl_comment"
+                        style="@style/lbl.black"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:text="@string/profile_comment" />
+
+                    <ImageButton
+                        android:id="@+id/imb_edit"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_edit"
+                        android:tint="@color/colorWhite"
+                        android:background="@drawable/back_btn_blue_circle" />
+
+                    <Button
+                        android:id="@+id/btn_post"
+                        style="@style/btn.blue_grad"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:text="Guardar Cambios"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="28dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_marginStart="13.5dp"
+                        android:layout_marginEnd="13.5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#99707070"/>
+
+                    <TextView
+                        android:id="@+id/lbl_reviews"
+                        style="@style/lbl.black"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginStart="35dp"
+                        android:text="@string/most_recent_reviews"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:id="@+id/llt_reviews"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

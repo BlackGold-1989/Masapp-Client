@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="200dp"
+    android:background="#80000000"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <com.laodev.masapp.ui.TextViewDrawableCompat
+        android:id="@+id/tv_select_this_location"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:drawablePadding="20dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="@string/select_this_location"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_location"
+        app:drawableTintCompat="@color/colorBlue" />
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/nearby_places"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_nearby_places"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_places"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

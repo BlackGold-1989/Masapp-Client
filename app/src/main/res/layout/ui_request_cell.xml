@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="17dp"
+        app:cardBackgroundColor="#ffffff">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/img_request_avatar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_account_circle" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_request_name"
+                        style="@style/lbl.black"
+                        android:text="User Name"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lbl_request_review"
+                        style="@style/lbl.black"
+                        android:layout_marginTop="8dp"
+                        android:text="Available after 3 patients"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorGreen"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_request_remark"
+                            style="@style/lbl.black"
+                            android:text="5.0"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorYellow"
+                            android:textSize="12sp"/>
+
+                        <ImageView
+                            android:id="@+id/img_request_01"
+                            android:layout_marginStart="4dp"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_star_fill"/>
+
+                        <ImageView
+                            android:id="@+id/img_request_02"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_star_fill"/>
+
+                        <ImageView
+                            android:id="@+id/img_request_03"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_star_fill"/>
+
+                        <ImageView
+                            android:id="@+id/img_request_04"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_star_fill"/>
+
+                        <ImageView
+                            android:id="@+id/img_request_05"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_star_fill"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/lbl_request_time"
+                    style="@style/lbl"
+                    android:layout_marginStart="20dp"
+                    android:text="1h ago"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <com.liangfeizc.flowlayout.FlowLayout
+                android:id="@+id/flw_tag_kind"
+                style="@style/flw_tag" />
+
+            <TextView
+                android:id="@+id/lbl_request_info"
+                style="@style/lbl.black"
+                android:layout_marginTop="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat."
+                android:textSize="12sp"/>
+
+            <HorizontalScrollView
+                android:id="@+id/sch_request_images"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <LinearLayout
+                    android:id="@+id/llt_request_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|end">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_location"
+                    app:tint="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/lbl_request_address"
+                    style="@style/lbl.black"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/city_province"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

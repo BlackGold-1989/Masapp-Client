@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/back_white_border_7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:civ_border_color="@color/colorGray"
+                app:civ_border_width="1dp"
+                android:src="@drawable/ic_account_circle" />
+
+            <LinearLayout
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_name"
+                    style="@style/lbl.black"
+                    android:text="Gabriel Arita"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbl_date"
+                    style="@style/lbl.black"
+                    android:layout_marginTop="8dp"
+                    android:text="2020-08-08 08:08:08"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_star_01"
+                android:layout_marginStart="8dp"
+                android:layout_width="16sp"
+                android:layout_height="16sp"
+                android:src="@drawable/ic_star" />
+
+            <ImageView
+                android:id="@+id/img_star_02"
+                android:layout_marginStart="-2dp"
+                android:layout_width="16sp"
+                android:layout_height="16sp"
+                android:src="@drawable/ic_star" />
+
+            <ImageView
+                android:id="@+id/img_star_03"
+                android:layout_marginStart="-2dp"
+                android:layout_width="16sp"
+                android:layout_height="16sp"
+                android:src="@drawable/ic_star" />
+
+            <ImageView
+                android:id="@+id/img_star_04"
+                android:layout_marginStart="-2dp"
+                android:layout_width="16sp"
+                android:layout_height="16sp"
+                android:src="@drawable/ic_star" />
+
+            <ImageView
+                android:id="@+id/img_star_05"
+                android:layout_marginStart="-2dp"
+                android:layout_width="16sp"
+                android:layout_height="16sp"
+                android:src="@drawable/ic_star" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl_comment"
+            style="@style/lbl.black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="In this box of text we are going to need the rating that a customer gives with it stars in top"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

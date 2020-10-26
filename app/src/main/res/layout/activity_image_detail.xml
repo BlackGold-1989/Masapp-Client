@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ImageDetailActivity">
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back_white_corner_circle"
+        android:elevation="2dp"
+        android:src="@drawable/btn_back"
+        android:onClick="onClickBackImg"/>
+
+</RelativeLayout>

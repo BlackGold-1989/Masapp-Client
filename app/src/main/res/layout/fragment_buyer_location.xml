@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    tools:context=".fragment.buyer.BuyerLocationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/lbl.black"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Direcciones" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lst_location"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+        <LinearLayout
+            android:id="@+id/llt_no_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/lbl.white"
+                android:layout_marginTop="96dp"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:text="Agregar direccion" />
+
+            <ImageView
+                android:layout_marginTop="36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_no_location" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imb_add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="77dp"
+            android:layout_marginEnd="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/back_white_corner_circle"
+            android:elevation="2dp"
+            android:src="@drawable/ic_add"
+            android:tint="@color/colorBlue" />
+    </RelativeLayout>
+</LinearLayout>

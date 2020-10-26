@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".fragment.buyer.BuyerProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            style="@style/lbl.black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/seller_setting_title" />
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_coin"
+                style="@style/lbl.white"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Coins : 100" />
+
+            <TextView
+                style="@style/lbl.white"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:text="Foto de perfil" />
+            
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#f1f1f1"
+                app:cardCornerRadius="24dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_avatar"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_account_circle"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/colorGray"/>
+                    
+                    <ImageButton
+                        android:id="@+id/imb_add"
+                        android:layout_alignEnd="@id/civ_avatar"
+                        android:layout_alignBottom="@id/civ_avatar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_add"
+                        android:tint="@color/colorBlue"
+                        android:elevation="2dp"
+                        android:background="@drawable/back_white_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/lbl.white"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:text="Foto de perfil " />
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#f1f1f1"
+                app:cardCornerRadius="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:text="Foto de perfil" />
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_name"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_user"
+                        app:hint="Ej. Jose Martinez"
+                        app:inputType="Other"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            style="@style/lbl.black"
+                            android:text="@string/reg_gender"
+                            android:textSize="11sp"/>
+
+                        <RadioGroup
+                            android:id="@+id/rdg_gender"
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rdb_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/radio_gender"
+                                android:paddingStart="8dp"
+                                android:text="@string/normal_male"
+                                android:textSize="11sp"
+                                android:textColor="@color/colorGray"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:id="@+id/rdb_female"
+                                android:layout_marginStart="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/radio_gender"
+                                android:paddingStart="8dp"
+                                android:text="@string/normal_female"
+                                android:textSize="11sp"
+                                android:textColor="@color/colorGray"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:text="Fecha de Nacimiento" />
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_birth"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_calendar"
+                        app:hint="08/08/2020"
+                        app:inputType="Number"/>
+
+                    <TextView
+                        style="@style/lbl.black"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:text="Email" />
+
+                    <com.laodev.masapp.ui.CustomEditText
+                        android:id="@+id/cet_email"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcLeft="@drawable/ic_email"
+                        app:hint="@string/normal_email"
+                        app:inputType="Email"/>
+
+                    <TextView
+                        android:id="@+id/lbl_comment"
+                        style="@style/lbl.black"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:text="@string/profile_comment" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/imb_edit"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="end"
+                android:background="@drawable/back_white_corner_circle"
+                android:src="@drawable/ic_edit"
+                android:elevation="2dp"
+                android:tint="@color/colorBlue" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/btn.white"
+                android:layout_marginTop="34dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar Cambios"/>
+
+            <View
+                android:layout_marginTop="56dp"
+                android:layout_marginStart="13.5dp"
+                android:layout_marginEnd="13.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="44dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#f1f1f1"
+                app:cardCornerRadius="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_reviews"
+                        style="@style/lbl.black"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginStart="35dp"
+                        android:text="@string/most_recent_reviews"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:id="@+id/llt_reviews"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

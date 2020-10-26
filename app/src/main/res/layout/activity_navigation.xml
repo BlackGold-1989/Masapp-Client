@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.seller.NavigationActivity">
+
+    <LinearLayout
+        android:id="@+id/llt_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_blue">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/btn_back"
+            android:onClick="onClickBackImg"
+            app:tint="@color/colorWhite" />
+
+        <TextView
+            style="@style/lbl.white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/normal_navigation" />
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp">
+
+        <WebView
+            android:id="@+id/wvw_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

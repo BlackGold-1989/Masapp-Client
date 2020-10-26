@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="41dp"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="42dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/ic_account_circle" />
+
+                <LinearLayout
+                    android:layout_marginStart="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_name"
+                        style="@style/lbl.black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Px . User Name"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_order_adderess"
+                            style="@style/lbl.black"
+                            android:text="My Location"
+                            android:lines="1"/>
+
+                        <ImageView
+                            android:layout_marginStart="12dp"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_location"
+                            app:tint="@color/colorBlue" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbl_time"
+                    style="@style/lbl"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:text="1h ago"
+                    android:textColor="@color/colorBlue"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl_order_info"
+                style="@style/lbl.black"
+                android:layout_marginTop="15dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur
+Here we are going to put some lines of the comment that makes the Patient"/>
+
+            <HorizontalScrollView
+                android:id="@+id/sch_order_images"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <LinearLayout
+                    android:id="@+id/llt_order_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <View
+                    android:id="@+id/viw_order_statu"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/back_red_circle"/>
+
+                <TextView
+                    android:id="@+id/lbl_order_status"
+                    style="@style/lbl.black"
+                    android:layout_marginStart="12dp"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Progressing"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

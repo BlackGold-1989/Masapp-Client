@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.seller.ReviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <TextView
+            style="@style/lbl.black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/review_register_title" />
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="55dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/back_regiser_avatar"
+                android:elevation="2dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_avatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    app:civ_border_color="@color/colorGray"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/ic_account_circle"/>
+
+                <ImageView
+                    android:id="@+id/img_register_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@id/civ_avatar"
+                    android:layout_alignBottom="@id/civ_avatar"
+                    android:padding="8dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/back_white_corner_circle"
+                    app:srcCompat="@drawable/ic_edit"
+                    app:tint="@color/colorBlue" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/lbl.black"
+                android:layout_marginTop="53dp"
+                android:layout_marginStart="38dp"
+                android:text="@string/reg_name_title"
+                android:textSize="11sp"/>
+
+            <com.laodev.masapp.ui.CustomEditText
+                android:id="@+id/cet_name"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcLeft="@drawable/ic_user"
+                app:hint="Ej. Jose Martinez"/>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:text="@string/reg_gender"
+                    android:textSize="11sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rdg_gender"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_gender"
+                        android:paddingStart="8dp"
+                        android:text="@string/normal_male"
+                        android:textSize="11sp"
+                        android:textColor="@color/colorGray"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/rdb_female"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_gender"
+                        android:paddingStart="8dp"
+                        android:text="@string/normal_female"
+                        android:textSize="11sp"
+                        android:textColor="@color/colorGray"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/lbl.black"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="38dp"
+                android:text="@string/reg_calendar"
+                android:textSize="11sp"/>
+
+            <com.laodev.masapp.ui.CustomEditText
+                android:id="@+id/cet_birth"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcLeft="@drawable/ic_calendar"
+                app:hint="@string/reg_calendar"/>
+
+            <TextView
+                style="@style/lbl.black"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="38dp"
+                android:text="@string/normal_city"
+                android:textSize="11sp"/>
+
+            <com.laodev.masapp.ui.CustomEditText
+                android:id="@+id/cet_city"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcLeft="@drawable/ic_location"
+                app:hint="@string/normal_city"/>
+
+            <TextView
+                style="@style/lbl.black"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="38dp"
+                android:text="@string/normal_province"
+                android:textSize="11sp"/>
+
+            <com.laodev.masapp.ui.CustomEditText
+                android:id="@+id/cet_province"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcLeft="@drawable/ic_location"
+                app:hint="@string/normal_province"/>
+
+            <TextView
+                style="@style/lbl.black"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="38dp"
+                android:text="@string/normal_latlng"
+                android:textSize="11sp"/>
+
+            <com.laodev.masapp.ui.CustomEditText
+                android:id="@+id/cet_latlng"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcLeft="@drawable/ic_location"
+                app:hint="@string/normal_latlng"/>
+
+            <TextView
+                style="@style/lbl.black"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="38dp"
+                android:text="@string/normal_phone"
+                android:textSize="11sp"/>
+
+            <com.laodev.masapp.ui.CustomEditText
+                android:id="@+id/cet_phone"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcLeft="@drawable/ic_phone"
+                app:hint="@string/normal_phone"/>
+
+            <TextView
+                style="@style/lbl.black"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="38dp"
+                android:text="@string/normal_email"
+                android:textSize="11sp"/>
+
+            <com.laodev.masapp.ui.CustomEditText
+                android:id="@+id/cet_email"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcLeft="@drawable/ic_email"
+                app:hint="@string/normal_email"/>
+
+            <Button
+                style="@style/btn.white"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="38dp"
+                android:text="@string/normal_login"
+                android:onClick="onClickUpdateBtn"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

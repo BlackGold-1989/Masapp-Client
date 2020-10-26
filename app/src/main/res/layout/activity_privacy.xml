@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    tools:context=".activity.PrivacyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            style="@style/lbl.black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/privacy_title" />
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="@dimen/padding_custome_edit"
+                android:layout_marginEnd="@dimen/padding_custome_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@drawable/back_white_70_9"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginTop="45dp"
+                    android:text="Política de seguridad en\ntransmisión\nde datos"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="La información que usted guarda sobre tarjetas de debito o crédito de ninguna manera se guarda en la plataforma. Esta información en ningún momento es retenida mucho menos divulgada. Los gestores de pago son externos por la empresa de pago seguro PayPal. La única información que la plataforma almacena son sus datos personales tales como correo electrónico, numero telefónico e historial clínico. Dicha información esta sujeta a nuestra política de privacidad. "/>
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginTop="45dp"
+                    android:text="Política de cambios en\ntransmisión\nde datos"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Masapp se reserva el derecho de modificar o actualizar estas políticas de transmisión de datos de tarjeta de crédito de tiempo en tiempo. Si hacemos cambios importantes en la forma en que tratamos su información personal es muy probable que le notificaremos a través de los servicios como correo electrónico o numero telefónico. El uso continuado de los servicios después de dicha notificación constituye su consentimiento en los cambios. Le recomendamos que revise periódicamente nuestra políticas para tener la información mas reciente. "/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

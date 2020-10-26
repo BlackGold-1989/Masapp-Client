@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    tools:context=".activity.buyer.AddLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/btn_back"
+            android:onClick="onClickBackImg"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/lbl.black"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Direcciones" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/lbl"
+        android:layout_marginTop="51.5dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="@color/colorWhite"
+        android:text="Agregar direccion" />
+
+    <TextView
+        style="@style/lbl"
+        android:layout_marginTop="39dp"
+        android:layout_marginStart="32dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/normal_direction" />
+
+    <com.laodev.masapp.ui.CustomEditText
+        android:id="@+id/cet_latlng"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcLeft="@drawable/ic_location"
+        app:hint="@string/normal_latlng"
+        app:inputType="Other"/>
+
+    <TextView
+        style="@style/lbl"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/normal_city" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardCornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/txt_city"
+            style="@style/lbl.black"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/normal_city"
+            android:textSize="14sp"
+            android:textColor="@color/colorGray"
+            android:layout_gravity="center_vertical"
+            android:lines="1"
+            android:background="@null" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        style="@style/lbl"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/normal_province" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardCornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/txt_department"
+            style="@style/lbl.black"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/normal_province"
+            android:textSize="14sp"
+            android:textColor="@color/colorGray"
+            android:layout_gravity="center_vertical"
+            android:lines="1"
+            android:background="@null" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        style="@style/btn.white"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:text="Guardar Cambios"
+        android:onClick="onClickAddLocation"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#707070</color>
+    <color name="colorBlue">#0FC9EC</color>
+    <color name="colorSky">#97F3CB</color>
+    <color name="colorRed">#fc4236</color>
+    <color name="colorGreen">#51ca5f</color>
+    <color name="colorLightGreen">#D2FF85</color>
+    <color name="colorYellow">#DAD329</color>
+
+    <color name="colorBackground">#E4E4E4</color>
+
+    <color name="blue_grad_1">#9ED5F3</color>
+    <color name="blue_grad_2">#68D0F0</color>
+    <color name="blue_grad_3">#0FC9EC</color>
+
+    <color name="blue_grad_start">#0BDCF3</color>
+    <color name="blue_grad_end">#0FACBE</color>
+
+    <color name="green_grad_start">#2CF324</color>
+    <color name="green_grad_end">#059A00</color>
+
+    <color name="red_grad_start">#DC4747</color>
+    <color name="red_grad_end">#AA0000</color>
+
+</resources>

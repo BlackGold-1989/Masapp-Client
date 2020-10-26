@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:background="@drawable/back_white_8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/lbl"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/dialog_review_title"
+        android:textColor="@color/colorGray"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_review_01"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_fill"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/img_review_02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_fill"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/img_review_03"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_fill"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/img_review_04"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_fill"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/img_review_05"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_fill"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/lbl"
+        android:layout_marginTop="24dp"
+        android:text="@string/dialog_review"
+        android:textColor="@color/colorGray"/>
+
+    <EditText
+        android:id="@+id/txt_review_content"
+        style="@style/lbl.black"
+        android:padding="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="@string/dialog_review"
+        android:lines="5"
+        android:textSize="14sp"
+        android:background="@drawable/back_white_border_7"/>
+
+    <Button
+        android:id="@+id/btn_review_submit"
+        style="@style/btn.blue_grad"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Listo!"
+        android:textSize="16sp"/>
+
+</LinearLayout>

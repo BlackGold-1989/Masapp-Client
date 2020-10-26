@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/back_main_blue"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="206dp"
+        android:layout_height="154dp"
+        android:src="@drawable/logo_app"
+        android:onClick="onClickChangeUser"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/lbl_login_seller"
+        style="@style/lbl.white"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginEnd="@dimen/padding"
+        android:text="@string/login_seller"
+        android:textColor="@color/colorGray"
+        android:layout_gravity="start"/>
+
+    <LinearLayout
+        android:id="@+id/llt_login_send"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.laodev.masapp.ui.CustomEditText
+            android:id="@+id/cet_phone"
+            android:layout_marginStart="@dimen/padding_custome_edit"
+            android:layout_marginEnd="@dimen/padding_custome_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isccp="true"
+            app:hint="@string/normal_phone"
+            app:inputType="Phone"/>
+
+        <Button
+            style="@style/btn.white"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="@dimen/padding"
+            android:layout_marginEnd="@dimen/padding"
+            android:text="@string/normal_login"
+            android:onClick="onClickVerifyBtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_verify_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/lbl_verify_title"
+            style="@style/lbl.white"
+            android:layout_marginTop="32dp"
+            android:text="@string/login_verify_title"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lbl_verify_detail"
+            style="@style/lbl.white"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/login_verify_detail"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_verify"
+            android:layout_marginTop="20dp"
+            style="@style/lbl.white"
+            app:height="60dp"
+            app:width="45dp"
+            app:bar_enabled="true"
+            app:bar_active_color="@color/colorGray"
+            app:bar_inactive_color="@color/colorGray"
+            app:bar_error_color="@color/colorRed"
+            app:bar_height="2dp"
+            app:length="6"
+            app:otp_text_size="28dp"/>
+
+        <TextView
+            android:id="@+id/lbl_time_counter"
+            style="@style/lbl.white"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="60 : 00"/>
+
+        <TextView
+            android:id="@+id/lbl_verify_resend"
+            style="@style/lbl.white"
+            android:layout_marginTop="12dp"
+            android:text="@string/login_resend_code"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/lbl_privacy"
+        style="@style/lbl.white"
+        android:layout_marginBottom="8dp"
+        android:text="@string/normal_privacy"
+        android:onClick="onClickLblPrivacy"/>
+
+</LinearLayout>

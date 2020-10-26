@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name" translatable="false">Masapp</string>
+    <string name="notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="maps_api_key" translatable="false">AIzaSyCB7xTbA6NzO0V0JWtOGo0cFcrKP-9DTrY</string>
+
+    <string name="normal_phone">Telefono</string>
+    <string name="normal_login">Enviar</string>
+    <string name="normal_privacy">Privacidad y política y acuerdo de usuario</string>
+    <string name="normal_city">Ciudad</string>
+    <string name="normal_province">Departamento</string>
+    <string name="normal_email">Email</string>
+    <string name="normal_latlng"><![CDATA[Latitud & Longitud]]></string>
+    <string name="normal_male">Masculino</string>
+    <string name="normal_female">Femenino</string>
+    <string name="normal_select">Seleccione</string>
+    <string name="normal_pending">Procesando</string>
+    <string name="normal_ready">Listo</string>
+    <string name="normal_medical_add">Agregar historial médico</string>
+    <string name="normal_medical_edit">Editar historial médico</string>
+    <string name="normal_seller_navigation">Navegar a ubicacion</string>
+    <string name="normal_buyer_call">Llamar Médico</string>
+    <string name="normal_direction">Dirección</string>
+
+    <string name="alt_direction">¿Quieres eliminar esta ubicación?</string>
+
+    <string name="pgr_connect_server">Servidor de conexión …</string>
+
+    <string name="missing_permissions">Permisos Faltantes</string>
+
+    <string name="toast_no_user">No se encontró información de usuario.</string>
+    <string name="toast_phone_empty">El telefono esta vacio.</string>
+    <string name="toast_sent_code">Acabo de enviar un código de verificación.</string>
+    <string name="toast_user_wrong">El tipo de usuario es incorrecto.</string>
+    <string name="toast_no_avatar">Tu imagen de avatar está vacía.</string>
+    <string name="toast_no_name">Tu nombre esta vacio</string>
+    <string name="toast_no_birth">Tu nacimiento está vacío.</string>
+    <string name="toast_no_location">Tu ubicación geográfica está vacía.</string>
+    <string name="toast_no_city">Tu ciudad está vacía.</string>
+    <string name="toast_no_province">Tu provincia está vacía.</string>
+    <string name="toast_no_email">Tu correo electrónico está vacío.</string>
+    <string name="toast_email_formate">El formato de su correo electrónico es incorrecto.</string>
+    <string name="toast_no_department">Por favor ingrese el nombre de su departamento.</string>
+
+    <string name="splash_comment">Creado en Centro América</string>
+
+    <string name="login_seller">Si eres médico ingresa aquí</string>
+    <string name="login_verify_title">Código de verificación</string>
+    <string name="login_verify_detail">Escriba el código de verificación para enviar a</string>
+    <string name="login_resend_code">Código reenviado</string>
+
+    <string name="privacy_title">Políticas de seguridad</string>
+
+    <string name="register_title">Regístrate!</string>
+    <string name="register_sub_title">Regresar</string>
+    <string name="reg_name_title">Nombre Completo</string>
+    <string name="reg_gender">Género:</string>
+    <string name="reg_calendar">Fecha de Nacimiento</string>
+
+    <string name="choose_location_title">Elegir la ubicación</string>
+    <string name="select_this_location">Seleccione esta ubicación</string>
+    <string name="nearby_places">Lugares cercanos</string>
+    <string name="user_this_location">Utiliza esta ubicación?</string>
+    <string name="change_location">Cambiar Locación</string>
+
+    <string name="review_register_title">Esperando la revisión</string>
+    <string name="toast_success_update">Actualización exitosa del perfil</string>
+    <string name="seller_home_title">Lista de Pacientes</string>
+    <string name="order_detail_title">Información del Paciente</string>
+    <string name="normal_profile">Perfil</string>
+    <string name="birth_title">Date of birth:</string>
+    <string name="buyer_home_imgae_upload">Adjuntar imágenes\n + (opcional Max 8)</string>
+    <string name="normal_location">Localización :</string>
+    <string name="normal_message">Mensaje</string>
+    <string name="most_recent_reviews">Reseñas más recientes</string>
+    <string name="toast_no_content">El contenido está vacío.</string>
+    <string name="toast_alrady_submit">Ya enviaste tu propuesta</string>
+    <string name="toast_alrady_accepted">Este pedido ya fue aceptado.</string>
+    <string name="seller_search_title">Expediente De Pacientes</string>
+    <string name="medical_list_title">Historial De Expediente</string>
+
+    <string name="str_tab_1"><u>Diagnostico</u></string>
+    <string name="str_tab_2"><u>Tratamiento</u></string>
+    <string name="str_tab_3"><u>Sintomas</u></string>
+    <string name="treatment_empty">Agregar Historial Medico</string>
+    <string name="treatment_hint">Ingrese algunas palabras …</string>
+
+    <string name="order_activity_title">Estado: <font color='#00a000'>Activo</font></string>
+    <string name="order_seller_active_sub_title">En espera</string>
+    <string name="order_inactive_title">Estado: <font color='#a00000'>Inactivo</font></string>
+    <string name="order_seller_inactive_sub_title">Tiene que atender un paciente.</string>
+    <string name="seller_order_inactive_content">Actualmente no tiene paciente\nesperando por su visita.</string>
+    <string name="seller_order_inactive_detail">Si desea generar ingresos extra debe atender un paciente que lo necesita en la pestaña de inicio y agregar su historial clínico.\nSi un paciente esta cerca de su localización debe visitarlo, su calificación incrementara y con ello el número sus ingresos.</string>
+
+    <string name="normal_navigation">Navegación</string>
+    <string name="toast_buyer_no_location">Agregue su ubicación en la pestaña de ubicación.</string>
+    <string name="seller_setting_title">Ajuste de Cuenta</string>
+    <string name="card_empty">Información aún no disponible.</string>
+
+    <string name="buyer_home_check_title">Encender mi ubicación</string>
+    <string name="buyer_home_no_desc">Tu descripción está vacía.</string>
+    <string name="city_province"><![CDATA[City & Province]]></string>
+    <string name="dia_accept_content">Este médico tiene (%d) pacientes en su lista de espera.\nEstaría dispuesto a esperar?\nSi esta dispuesto a esperar presione aceptar.\nNo quiere esperar presione cancelar y envíe una nueva solicitud desde la pestaña inicio.</string>
+    <string name="dialog_review_title">Que valoración das a este médico</string>
+    <string name="dialog_review">¿ Enviar comentario ?</string>
+    <string name="profile_comment"><u>Enviar comentario o pedir ayuda</u></string>
+    <string name="toast_no_coin">Tu moneda no es suficiente</string>
+    <string name="your_email">Tu correo electrónico</string>
+    <string name="your_messages">Tus mensajes</string>
+    <string name="toast_comment">La longitud del comentario debe tener más de 6 caracteres.</string>
+    <string name="success_submit">Envío exitoso.</string>
+    <string name="payment_detail">La tarjeta es guardada exclusivamente en el dispositivo de forma segura. Dicha información esta sujeta a nuestras políticas y uso. <font color='#707070'>Leer mas</font></string>
+</resources>

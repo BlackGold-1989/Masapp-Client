@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity.buyer.PaymentActivity">
+
+    <LinearLayout
+        android:id="@+id/llt_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/btn_back"
+            android:onClick="onClickBackImg" />
+
+        <TextView
+            style="@style/lbl.black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Pago" />
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_paypal" />
+
+        <ImageView
+            android:layout_marginStart="10sp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_master" />
+
+        <ImageView
+            android:layout_marginStart="10sp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_visa" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/lbl.white"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Necesita realizar el siguiente pago\npara enviar su solicitud" />
+
+    <TextView
+        style="@style/lbl.white"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="L. 625.00" />
+
+    <View
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/lbl.white"
+            android:textStyle="bold"
+            android:text="Pago al medico" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/lbl.white"
+            android:textStyle="bold"
+            android:text="L. 625.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/lbl.white"
+            android:textStyle="bold"
+            android:text="Gasto de transporte" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/lbl.white"
+            android:textStyle="bold"
+            android:text="Envió Gratis" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/lbl.white"
+            android:textStyle="bold"
+            android:text="Total" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/lbl.white"
+            android:textStyle="bold"
+            android:text="L. 625.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite" />
+
+    <TextView
+        style="@style/lbl.white"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:textSize="9dp"
+        android:text="@string/payment_detail" />
+
+    <TextView
+        style="@style/lbl.white"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:text="Realizar pago seguro con " />
+
+    <Button
+        style="@style/btn.white"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:text="Paypal"
+        android:textSize="16sp"
+        android:onClick="onClickPaypalBtn"/>
+
+    <Button
+        style="@style/btn.white"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:text="Tarjeta "
+        android:textSize="16sp"
+        android:onClick="onClickCardBtn"/>
+</LinearLayout>

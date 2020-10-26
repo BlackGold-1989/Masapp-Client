@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".fragment.buyer.BuyerHomePendingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/lbl.black"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/order_inactive_title" />
+
+            <TextView
+                style="@style/lbl.black"
+                android:textAlignment="center"
+                android:text="Tiene que enviar una solicitud. " />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/lbl.white"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:text="Actualmente no tiene una\nsolicitud pendiente. " />
+
+    <TextView
+        style="@style/lbl.white"
+        android:padding="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="18sp"
+        android:text="Si desea ser atendido por un médico mándenos detalles sobre cual es su malestar, de ser necesario puede adjuntar imágenes y en el tiempo que le tome al médico en llegar le estará atendiendo en su casa u localización que tenga establecida.  "
+        android:background="@drawable/back_black_border_15_23"/>
+</LinearLayout>

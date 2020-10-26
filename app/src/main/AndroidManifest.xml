@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.laodev.masapp">
+
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:requestLegacyExternalStorage="true">
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.PrivacyActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.ImageDetailActivity" android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.seller.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.seller.ReviewActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.seller.OrderDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.seller.MedicalListActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.seller.MedicalDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.seller.NavigationActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.seller.CardListActivity" android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.buyer.CommentActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.buyer.AddLocationActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.buyer.RequestDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.buyer.HistoryDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.buyer.PaymentActivity" android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.calling.IncomingVideoScreenActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.calling.IncomingVoiceScreenActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.calling.VideoScreenActivity" android:screenOrientation="portrait" />
+        <activity android:name=".activity.calling.VoiceScreenActivity" android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.placespicker.PlacesPickerActivity" android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+        <activity android:name="com.cooltechworks.creditcarddesign.CardEditActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+
+        <service android:name=".service.SinchService" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_push" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorGray" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/notification_channel_id"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="r5oVXgaaSqnhWtqsuMMc" />
+
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="Pv-_XkZ7CsE9EJn5W1Ahcg" />
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+    </application>
+</manifest>

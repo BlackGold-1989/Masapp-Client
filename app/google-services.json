@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "627384248189",
+    "firebase_url": "https://masapp-ec42c.firebaseio.com",
+    "project_id": "masapp-ec42c",
+    "storage_bucket": "masapp-ec42c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627384248189:android:6a1bc07fed3874ecfb4e14",
+        "android_client_info": {
+          "package_name": "com.laodev.masapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627384248189-rdi7l2tnhprcupgfao6g3sv2hn4k70ip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.masapp",
+            "certificate_hash": "25c80d16234e522f7a992414a7706b4e9363946f"
+          }
+        },
+        {
+          "client_id": "627384248189-0mkj3i2r7vst2d69ji45c9h83p2a5oh8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.masapp",
+            "certificate_hash": "ffb68b7a4eac858117cc57e64eba3a27ab63062d"
+          }
+        },
+        {
+          "client_id": "627384248189-f52fd5jf9pjujaie6pg78vodnh48thnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHTH3QQFGUWO4tBMLZY3MBrbPisRuT4Sc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627384248189-f52fd5jf9pjujaie6pg78vodnh48thnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

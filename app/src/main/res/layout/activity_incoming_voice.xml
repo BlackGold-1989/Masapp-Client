@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/back_main_blue"
+    tool:context=".activity.calling.IncomingVoiceScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/back_toolbar_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/remoteUser"
+            style="@style/lbl.black"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Sample user"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/callState"
+            style="@style/lbl.black"
+            android:layout_gravity="center_horizontal"
+            android:text="Voice calling ..."
+            android:textSize="12sp"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="18dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <LinearLayout
+            android:id="@+id/bottomPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                app:cardCornerRadius="135dp">
+
+                <ImageView
+                    android:id="@+id/img_income_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_account_circle"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/declineButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/back_red_circle">
+
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_call_end" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/answerButton"
+                    android:layout_marginStart="180dp"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/back_green_circle" >
+
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_call_on" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

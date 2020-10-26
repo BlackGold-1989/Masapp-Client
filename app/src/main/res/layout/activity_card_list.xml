@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tool:context=".activity.seller.CardListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_blue">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/btn_back"
+            android:onClick="onClickBackImg"
+            app:tint="@color/colorWhite" />
+
+        <TextView
+            style="@style/lbl.white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Información de pago" />
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lbl_empty"
+            style="@style/lbl.black"
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/card_empty"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lst_card"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/back_white_24"
+            android:text="Done"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGray"/>
+
+        <ImageButton
+            android:layout_marginBottom="77dp"
+            android:layout_marginEnd="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/btn_edit"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:background="@drawable/back_white_corner_circle"
+            android:src="@drawable/ic_add"
+            android:elevation="2dp"
+            app:tint="@color/colorBlue"
+            android:onClick="onClickAddCard"/>
+    </RelativeLayout>
+</LinearLayout>

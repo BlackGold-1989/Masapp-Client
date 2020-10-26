@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_main_blue"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".fragment.buyer.BuyerHomeAcceptFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:background="@drawable/back_toolbar_white">
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/lbl.black"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/order_activity_title" />
+
+            <TextView
+                style="@style/lbl.black"
+                android:textAlignment="center"
+                android:text=" En espera " />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/lbl.white"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:text="Pronto el médico se pondrá\nen contacto con usted." />
+
+    <TextView
+        style="@style/lbl.white"
+        android:padding="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:lines="6"
+        android:textSize="18sp"
+        android:text="Asegúrese de mantener sus datos móviles encendidos, su ubicación correctamente establecida, y obtendrá la información de él médico que le atenderá para que usted pueda dar seguimiento al proceso. "
+        android:background="@drawable/back_black_border_15_23"/>
+</LinearLayout>
